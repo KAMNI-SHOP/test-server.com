@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Велиикие Камни</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="search-bar">
+
+            <input type="text" placeholder="введите название камушка" id="searchInput">
+
+            <div id="searchResults"></div>
+
+        </div>
+
+        <div class="buttons">
+
+            <button id="loginBtn">Вход</button>
+
+            <button id="registerBtn">Регистрация</button>
+
+            <button id="accountBtn" class="hidden">Личный кабинет</button>
+
+            <button id="inventoryBtn" class="hidden">Инвентарь</button>
+
+            <button id="submitStoneBtn">Выложить мой камень</button>
+
+        </div>
+
+    </header>
+    <div class="pro">
+
+        <img src="stonepro.png" alt="pro title">
+
+        <h3> ᠌ ᠌᠌ ᠌АКЦИЯ "pro stone"</h3>
+
+        <li><strike>999$</strike></li> ᠌ ᠌ ᠌᠌ ᠌<p><strong>off sale ᠌ ᠌᠌ ᠌</b></p>
+
+        <button id="pro">Купить</button>
+
+    </div>
+
+</div>
+
+</div>
+    <div class="content">
+
+        <div class="stone">
+
+            <img src="honey.png" alt="Джордж 2">
+
+            <div class="info">
+
+                <h2>ИНФОРМАЦИЯ</h2>
+
+                <p>2025<br>магазин меняет товар каждые 48 часов! Коллекционируй Камни и следи за новыми участниками сайта. Это тест версия!</p>
+
+            </div>
+
+        </div>
+
+        <!-- Копии камней -->
+
+        <div class="stone">
+
+            <img src="попович.png" alt="попучев 1">
+
+            <div class="info">
+
+                <h2>попучев</h2>
+
+                <p>Камень джордж великий второй<br>Дата Рождения 25.01.2025,
+                Этот камень обожает рисовать и гулять с ддрузьями, а также его любимый банк fpifpi.ru ,
+            так же он очень дружелюбный и веселый! Владелец: Стас Стасович Станиславович</p>
+
+            </div>
+
+        </div>
+
+    <div class="stone">
+
+        <img src="манка.jpg" alt="попучев 1">
+
+        <div class="info">
+
+            <h2>МАНКА (администратор)</h2>
+
+            <p>1 тестер и администратор сайта<br>TikTok: @Hop_ka, первый тестер и администратор сайта, она присутствует в доступе тестеров, 
+            а также спонсирует наш сайт!</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <footer>
+
+        <p>® Все права защищены каменцовыми камнями камнями</p>
+
+    </footer>
+
+    <!-- Модальные окна -->
+
+    <div id="loginModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <h2>Вход</h2>
+
+            <input type="text" id="loginUsername" placeholder="Никнейм">
+
+            <input type="password" id="loginPassword" placeholder="Пароль">
+
+            <button id="submitLogin">Войти</button>
+
+        </div>
+
+    </div>
+
+    <div id="registerModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <h2>Регистрация</h2>
+
+            <input type="text" id="registerUsername" placeholder="Никнейм">
+
+            <input type="password" id="registerPassword" placeholder="Пароль">
+
+            <button id="submitRegister">Зарегистрироваться</button>
+
+        </div>
+
+    </div>
+
+    <div id="accountModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <h2>ВАШ БАЛАНС</h2>
+
+            <p id="balance">0,00 $</p>
+
+            <button id="shopBtn">Магазин</button>
+
+        </div>
+
+    </div>
+
+    <div id="shopModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <h2>Магазин</h2>
+
+            <div class="stone">
+
+                <img src="https://starpets.ams3.cdn.digitaloceanspaces.com/AM/urchi_9844702985021569280399885980697540637.png" alt="pip">
+
+                <h3>КАМЕНЬ РАНДОМ</h3>
+
+                <p>999 $</p>
+
+                <button id="buyBtn">Купить</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="inventoryModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <h2>Инвентарь</h2>
+
+            <div id="inventoryItems"></div>
+
+        </div>
+
+    </div>
+
+    <div id="submitStoneModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <h2>Выложить мой камень</h2>
+
+            <input type="text" id="stoneName" placeholder="Имя камня">
+
+            <textarea id="stoneInfo" placeholder="Информация о камне"></textarea>
+
+            <input type="file" id="stoneImage">
+
+            <button id="submitStone">Отправить заявку</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
